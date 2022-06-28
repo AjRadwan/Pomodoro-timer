@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Old+Standard+TT&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+ font-family: 'Old Standard TT', serif;
+}
+ 
+.pomo-title {
+	margin-bottom: 25px;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Old Standard TT', serif;
+	margin-top: 35px;
+}
+
+.pomo-timer {
+	margin-top: 40px;
+	margin-bottom: 28px;
+}
+  
+.timerStyle {
+  background: #DEFBEC;
+  height: 100vh;
+  text-align: center;
+  font-family: Sans-serif;
+  font-weight: bold;
+ padding-top: 120px;
+
+}
+ 
+
+.pomodoroButton:hover, .pomodoroButton:visited, .pomodoroButton:focus, .pomodoroButton:active, .shortButton:hover, .shortButton:active, .shortButton:visited, .shortButton:focus,  .longButton:hover, .longButton:active, .longButton:visited, .longButton:focus{
+  background-color: #000000;
+  color: #ffff;
+  text-decoration:  none;
+  transition: all .4s ease;
+  outline: none;
+ 
+}
+
+/* button */
+.pomodoroButton, .shortButton, .longButton{
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  border-radius: 5px;
+
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+   background-color: #17D773;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: inherit;
+    min-height: 6vh;
+  line-height: 20px;
+  margin-right: 0.5%;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+    min-width: 60px;
+  width: 10%;
+  border: none;
+}
+
+
+.restartButton, .startButton, .stopButton {
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  border-radius: 5px;
+ 
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+   background-color: #17D773;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: inherit;
+    min-height: 6vh;
+  line-height: 20px;
+  margin-right: 0.5%;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+    min-width: 60px;
+  width: 12%;
+  border: none;
+ 
+}
+
+.restartButton:hover, .restartButton:visited, .restartButton:active,  .startButton:hover, .startButton:visited, .startButton:focus, .startButton:active, .stopButton:hover, .stopButton:visited, .stopButton:focus, .stopButton:active {
+  background-color: #000000;
+  color: #ffff;
+  transition: all .4s ease;
+  text-decoration:  none;
+  
+}
+
+ 
+/* #stopButton, #restartButton {
+  display: none;
+} */
+
+
+
+.timer-time {
+    line-height:1em;
+    font-size: 5em;
+    /* change button size here  */
+}
+
+.timer-container {
+  height: 1em;
+  overflow: hidden;
+  position: relative;
+}
+
+.timer-box {
+  height: 1em;
+  margin: auto;
+  position: relative;
+}
+
+.timer-box > span {
+  position: relative;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.pomo{
+  font-size: 30px;
+  color: blueviolet;
+}
+ 
+ 
+
+ /* Medium devices (tablets, 768px and up) */
+@media all and (max-width: 750px) {
+  
+   .responsive-btn{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   /* button */
+.pomodoroButton, .shortButton, .longButton, .startButton{
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  font-weight: 500;
+  min-height: 6vh;
+  margin-top: 10px; 
+  width: 50%;
+
+}
+
+.btn-dark:focus{
+  outline: none !important;
+  box-shadow: none;
+ 
+}
+
+.timer-time {
+  line-height:1em;
+  font-size: 3em;
+  /* change button size here  */
+}
+.restartButton, .stopButton {
+  -webkit-appearance: none;
+  -webkit-user-select: none; 
+  width: 20%;
+
+}
+}
+
